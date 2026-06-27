@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { getFunctions, httpsCallable } from 'firebase/functions';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function LinkChecker() {
@@ -14,11 +13,20 @@ export default function LinkChecker() {
     setLoading(true);
     setResult(null);
     try {
-      const functions   = getFunctions();
-      const checkLink   = httpsCallable(functions, 'checkLink');
-      const { data }    = await checkLink({ url: url.trim() });
+      const res = await fetch('/api/checkLink', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ url: url.trim() }),
+      });
+      if (!res.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await res.json();
       setResult(data);
-    } catch {
+    } catch (err) {
+      console.error('Error checking link:', err);
       setResult({ verdict: 'error' });
     } finally {
       setLoading(false);

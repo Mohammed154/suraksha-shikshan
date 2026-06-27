@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, writeBatch, query, where, getDocs, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config.js';
 
 export default function ReportForm({ type }) {
@@ -20,34 +20,78 @@ export default function ReportForm({ type }) {
     setStatus('loading');
     try {
       if (type === 'app') {
-        await addDoc(collection(db, 'scamAppReports'), {
+        const appNameLower = form.appName.trim().toLowerCase();
+        // Query existing reports for this app
+        const q = query(collection(db, 'scamAppReports'), where('appName_lower', '==', appNameLower));
+        const snap = await getDocs(q);
+        const count = snap.size + 1;
+        
+        let newStatus = 'reported';
+        if (count >= 10) newStatus = 'confirmed_scam';
+        else if (count >= 3) newStatus = 'under_review';
+        
+        const batch = writeBatch(db);
+        
+        // Add new document
+        const newDocRef = doc(collection(db, 'scamAppReports'));
+        batch.set(newDocRef, {
           appName:         form.appName.trim(),
-          appName_lower:   form.appName.trim().toLowerCase(),
+          appName_lower:   appNameLower,
           appUrl:          form.appUrl.trim(),
           publisher:       form.publisher.trim(),
           scamType:        form.scamType,
           description:     form.description.trim(),
           reportedAt:      serverTimestamp(),
-          status:          'reported',
-          reportCount:     1,
+          status:          newStatus,
+          reportCount:     count,
         });
+        
+        // Update existing documents
+        snap.forEach((doc) => {
+          batch.update(doc.ref, { status: newStatus, reportCount: count });
+        });
+        
+        await batch.commit();
       } else {
         let domain = '';
         try { domain = new URL(form.url).hostname.replace('www.', ''); } catch {}
-        await addDoc(collection(db, 'spamLinkReports'), {
+        const domainLower = domain.toLowerCase().trim();
+        
+        // Query existing reports for this domain
+        const q = query(collection(db, 'spamLinkReports'), where('domain', '==', domainLower));
+        const snap = await getDocs(q);
+        const count = snap.size + 1;
+        
+        let threatLevel = 'reported';
+        if (count >= 10) threatLevel = 'confirmed_threat';
+        else if (count >= 3) threatLevel = 'likely_phishing';
+        
+        const batch = writeBatch(db);
+        
+        // Add new document
+        const newDocRef = doc(collection(db, 'spamLinkReports'));
+        batch.set(newDocRef, {
           url:             form.url.trim(),
-          domain,
+          domain:          domainLower,
           platform:        form.platform,
           scamCategory:    form.scamCategory,
           description:     form.description.trim(),
           reportedAt:      serverTimestamp(),
-          threatLevel:     'reported',
-          reportCount:     1,
+          threatLevel:     threatLevel,
+          reportCount:     count,
         });
+        
+        // Update existing documents
+        snap.forEach((doc) => {
+          batch.update(doc.ref, { threatLevel, reportCount: count });
+        });
+        
+        await batch.commit();
       }
       setStatus('success');
       setForm({ appName: '', appUrl: '', publisher: '', scamType: 'fake_loan', url: '', platform: 'whatsapp', scamCategory: 'phishing', description: '' });
-    } catch {
+    } catch (error) {
+      console.error('Failed to submit report:', error);
       setStatus('error');
     }
   }

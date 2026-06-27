@@ -66,13 +66,11 @@ suraksha-shikshan/
 └── package.json
 ```
 
-## 🔧 Firebase Setup
+## 🔧 Firebase Database Setup
 
 1. Create a Firebase project at https://console.firebase.google.com
-2. Enable **Firestore**, **Authentication (Anonymous)**, and **Hosting**
-3. Copy your config into `.env`
-4. Deploy functions: `firebase deploy --only functions`
-5. Deploy hosting: `npm run build && firebase deploy --only hosting`
+2. Enable **Firestore Database** and **Authentication** (enable **Anonymous** provider)
+3. Copy your project config into `.env` (refer to `.env.example`)
 
 ## 📱 Features
 
@@ -95,17 +93,31 @@ suraksha-shikshan/
 - Semi-literate homemakers managing UPI
 - School-dropout youth targeted by fake job scams
 
-## 🌐 Deployment
+## 🌐 Deployment to Vercel
 
+The project is configured for Vercel deployment, including Vercel Serverless Functions for API routes.
+
+### 1. Local Development
 ```bash
-# Build for production
-npm run build
+npm run dev
+```
 
-# Deploy to Vercel (recommended)
-npx vercel --prod
+### 2. Vercel Environment Variables
+Configure the following environment variables in your Vercel project settings:
+- `VITE_FIREBASE_API_KEY`
+- `VITE_FIREBASE_AUTH_DOMAIN`
+- `VITE_FIREBASE_PROJECT_ID`
+- `VITE_FIREBASE_STORAGE_BUCKET`
+- `VITE_FIREBASE_MESSAGING_SENDER_ID`
+- `VITE_FIREBASE_APP_ID`
+- `SAFE_BROWSING_API_KEY`
+- `WHOIS_API_KEY`
 
-# OR deploy to Firebase Hosting
-firebase deploy
+### 3. Deploy
+Deploy using the Vercel CLI or import the repository in your Vercel dashboard:
+```bash
+# Deploy to Vercel
+vercel --prod
 ```
 
 ## 📋 Internship Day Plan
