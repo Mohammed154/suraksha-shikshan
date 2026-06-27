@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans Gujarati', 'Roboto', sans-serif;
+    background-color: #FAFAF7;
+    color: #1E293B;
+    /* Prevent text size adjustment on orientation change */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Minimum accessible font sizes */
+  body {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* Every tap target must be at least 48x48px */
+  button, a, [role="button"] {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-navy text-white font-bold rounded-xl px-6 py-3 text-lg-acc
+           min-h-[48px] active:scale-95 transition-transform shadow-md
+           hover:bg-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-300;
+  }
+
+  .btn-danger {
+    @apply bg-danger text-white font-bold rounded-xl px-6 py-3 text-lg-acc
+           min-h-[48px] active:scale-95 transition-transform shadow-md;
+  }
+
+  .btn-safe {
+    @apply bg-safe text-white font-bold rounded-xl px-6 py-3 text-lg-acc
+           min-h-[48px] active:scale-95 transition-transform shadow-md;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-4;
+  }
+
+  .label-gu {
+    /* Gujarati-specific label: slightly larger, bold */
+    font-family: 'Noto Sans Gujarati', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A3C6E;
+  }
+
+  .simulation-watermark {
+    @apply absolute inset-0 flex items-center justify-center pointer-events-none;
+  }
+}
+
+/* Gujarati font override for key elements */
+.font-gu {
+  font-family: 'Noto Sans Gujarati', sans-serif;
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Safe area for mobile notch */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0); }
+
+/* Scam Alert custom left border */
+.scam-alert-border {
+  border-left: 4px solid #9d4300;
+}
+

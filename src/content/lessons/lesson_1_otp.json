@@ -1,0 +1,117 @@
+{
+  "id": "lesson_1_otp",
+  "badge": "otp_warrior",
+  "badgeLabel": { "gu": "OTP યોદ્ધા", "en": "OTP Warrior" },
+  "character": { "name": "Ramesh bhai", "age": 65, "emoji": "👴" },
+  "gu": {
+    "title": "OTP ક્યારેય share ન કરો",
+    "subtitle": "Bank account ઠગ",
+    "panels": [
+      {
+        "type": "intro",
+        "text": "Ramesh bhai ઘરે આરામ કરી રહ્યા હતા. ત્યાં phone ની ઘંટી વાગી.",
+        "image": "👴📱"
+      },
+      {
+        "type": "threat",
+        "isSimulation": true,
+        "simulationLabel": "આ SIMULATION છે — ખોટો message",
+        "text": "Caller કહ્યો: 'હું SBI bank થી બોલું છું. તમારું account block થઈ જશે. OTP બતાવો.'",
+        "redFlags": [
+          "Bank ક્યારેય OTP ફોન પર નથી માંગતી",
+          "'Account block' — ડર પેદા કરવાની trick",
+          "અજાણ્યો caller — trust ન કરો"
+        ]
+      },
+      {
+        "type": "decision",
+        "question": "Ramesh bhai શું કરે?",
+        "correct": "phone મૂકો, bank ની official number પર call કરો",
+        "wrong": "OTP share કરો"
+      },
+      {
+        "type": "consequence",
+        "wrongOutcome": "❌ OTP share કર્યો → ₹50,000 account માંથી ગયા 😢",
+        "rightOutcome": "✅ Ramesh bhai એ phone મૂક્યો → account સુરક્ષિત રહ્યું! 🎉"
+      },
+      {
+        "type": "takeaway",
+        "rule": "OTP = તમારો ખાનગી lock. ક્યારેય, કોઈ ને SHARE ન કરો.",
+        "subtext": "Bank, police, government — કોઈ પણ OTP ક્યારેય ફોન પર નહીં માંગે."
+      }
+    ]
+  },
+  "en": {
+    "title": "Never Share Your OTP",
+    "subtitle": "Bank Account Fraud",
+    "panels": [
+      {
+        "type": "intro",
+        "text": "Ramesh bhai was resting at home when his phone rang.",
+        "image": "👴📱"
+      },
+      {
+        "type": "threat",
+        "isSimulation": true,
+        "simulationLabel": "THIS IS A SIMULATION — Fake message",
+        "text": "The caller said: 'I'm calling from SBI bank. Your account will be blocked. Please share your OTP.'",
+        "redFlags": [
+          "Banks NEVER ask for OTP over the phone",
+          "'Account will be blocked' — creating fear is a trick",
+          "Unknown caller — do not trust"
+        ]
+      },
+      {
+        "type": "decision",
+        "question": "What should Ramesh bhai do?",
+        "correct": "Hang up and call the bank's official number",
+        "wrong": "Share the OTP"
+      },
+      {
+        "type": "consequence",
+        "wrongOutcome": "❌ Shared OTP → ₹50,000 stolen from account 😢",
+        "rightOutcome": "✅ Ramesh bhai hung up → account stayed safe! 🎉"
+      },
+      {
+        "type": "takeaway",
+        "rule": "OTP = Your private key. NEVER share it with anyone.",
+        "subtext": "Banks, police, government — nobody will ever ask for your OTP over the phone."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "gu": "Bank નો employee phone પર OTP માંગે. તમે શું કરો?",
+      "en": "A bank employee asks for your OTP over the phone. What do you do?",
+      "options": {
+        "gu": ["OTP share કરો", "Phone મૂકી bank ની number પર call કરો", "1 minute wait કરો", "Family ને પૂછો"],
+        "en": ["Share the OTP", "Hang up and call the bank's official number", "Wait 1 minute", "Ask your family"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Bank ક્યારેય OTP ફોન પર નથી માંગતી.", "en": "Banks never ask for OTP over the phone." }
+    },
+    {
+      "id": "q2",
+      "gu": "OTP ક્યારે share કરી શકાય?",
+      "en": "When is it okay to share your OTP?",
+      "options": {
+        "gu": ["Bank employee ને", "Police ને", "ક્યારેય નહીં", "Family ને"],
+        "en": ["To a bank employee", "To the police", "Never", "To family"]
+      },
+      "correct": 2,
+      "explanation": { "gu": "OTP ક્યારેય share ન કરો — family ને પણ નહીં.", "en": "Never share OTP — not even with family." }
+    },
+    {
+      "id": "q3",
+      "gu": "Caller 'Account block' ની ધમકી આપે — આ શું છે?",
+      "en": "Caller threatens 'your account will be blocked' — what is this?",
+      "options": {
+        "gu": ["Real bank call", "ડર ઉભો કરવાની trick", "Government notice", "Technical problem"],
+        "en": ["A real bank call", "A trick to create fear", "Government notice", "Technical problem"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "ઠગ ડર ઉભો કરે — ઉતાવળ ન કરો.", "en": "Scammers create fear — never rush." }
+    }
+  ]
+}

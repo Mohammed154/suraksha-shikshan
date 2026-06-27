@@ -1,0 +1,82 @@
+{
+  "id": "lesson_4_job",
+  "badge": "job_shield",
+  "badgeLabel": { "gu": "નોકરી શિલ્ડ", "en": "Job Shield" },
+  "character": { "name": "Mohan", "age": 19, "emoji": "👦" },
+  "gu": {
+    "title": "નકલી નોકરી ફસાણ",
+    "subtitle": "Fake job / work-from-home ઠગ",
+    "panels": [
+      { "type": "intro", "text": "Mohan job શોધી રહ્યો હતો. Instagram પર ad આવ્યો: 'ઘરે બેઠા ₹50,000/month!'", "image": "👦💼" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — ખોટી job offer",
+        "text": "Message: 'Amazon work-from-home. ₹50,000/month. Registration fee ₹999 only. Limited seats!'",
+        "redFlags": [
+          "Amazon ક્યારેય WhatsApp / Instagram પર job offer ન કરે",
+          "'Registration fee' — real job ક્યારેય fee ન લે",
+          "'Limited seats! Hurry!' — ઉતાવળ ઉભી કરે છે"
+        ]
+      },
+      { "type": "decision", "question": "Mohan શું કરે?",
+        "correct": "Company ની official website check કરો, fee ન ભરો",
+        "wrong": "₹999 registration fee pay કરો" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ ₹999 pay → 'training fee' ₹2000 → 'kit fee' ₹3000 → job ન મળ્યો 😢",
+        "rightOutcome": "✅ Mohan officially apply કર્યો → real job found! 🎉" },
+      { "type": "takeaway", "rule": "Real job ક્યારેય 'registration fee' ન માંગે.", "subtext": "Instagram / WhatsApp job offer = ઠગ. Amazon, Flipkart directly hire કરે — fee વિના." }
+    ]
+  },
+  "en": {
+    "title": "The Fake Job Trap",
+    "subtitle": "Fake Job / Work-From-Home Scam",
+    "panels": [
+      { "type": "intro", "text": "Mohan was job hunting. An Instagram ad appeared: 'Earn ₹50,000/month from home!'", "image": "👦💼" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — Fake job offer",
+        "text": "Message: 'Amazon work-from-home. ₹50,000/month. Registration fee ₹999 only. Limited seats!'",
+        "redFlags": [
+          "Amazon never offers jobs via WhatsApp or Instagram",
+          "'Registration fee' — real jobs never charge a fee",
+          "'Limited seats! Hurry!' — artificial urgency is a trick"
+        ]
+      },
+      { "type": "decision", "question": "What should Mohan do?",
+        "correct": "Check the company's official website, don't pay any fee",
+        "wrong": "Pay the ₹999 registration fee" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Paid ₹999 → 'training fee' ₹2000 → 'kit fee' ₹3000 → no job 😢",
+        "rightOutcome": "✅ Mohan applied officially → found a real job! 🎉" },
+      { "type": "takeaway", "rule": "Real jobs never ask for a registration fee.", "subtext": "Instagram / WhatsApp job offers = scams. Amazon, Flipkart hire directly — no fee." }
+    ]
+  },
+  "quiz": [
+    { "id": "q1",
+      "gu": "Instagram ad: 'ઘરે બેઠા ₹40,000/month, fee ₹500' — આ શું છે?",
+      "en": "Instagram ad: 'Earn ₹40,000/month from home, fee ₹500' — what is this?",
+      "options": {
+        "gu": ["Real job", "ઠગ", "Part-time job", "Government scheme"],
+        "en": ["Real job", "A scam", "Part-time job", "Government scheme"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Real job fee ન લે — fee = ઠગ.", "en": "Real jobs don't charge fees — fee = scam." }
+    },
+    { "id": "q2",
+      "gu": "Job offer WhatsApp / Instagram પર — real company ક્યારે ન send કરે?",
+      "en": "Job offers on WhatsApp / Instagram — when do real companies NOT send these?",
+      "options": {
+        "gu": ["ક્યારેક", "ક્યારેય નહીં", "Startups ક્યારે", "Only IT jobs"],
+        "en": ["Sometimes", "Never", "For startups", "Only IT jobs"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Real companies official websites / job portals (Naukri, LinkedIn) ઉપર hire કરે.", "en": "Real companies hire through official websites / job portals like Naukri, LinkedIn." }
+    },
+    { "id": "q3",
+      "gu": "'Limited seats! Apply now!' — આ ઠગ ક્યારે use કરે?",
+      "en": "'Limited seats! Apply now!' — why do scammers say this?",
+      "options": {
+        "gu": ["Genuine urgency", "ઉતાવળ ઉભી કરી — think ન કરો", "Company policy", "HR requirement"],
+        "en": ["Genuine urgency", "To rush you — so you don't think", "Company policy", "HR requirement"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Urgency = ઠગ ની trick. Time લો, verify કરો.", "en": "Urgency = scammer's trick. Take your time and verify." }
+    }
+  ]
+}

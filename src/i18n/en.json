@@ -1,0 +1,165 @@
+{
+  "app_name": "Suraksha Shikshan",
+  "tagline": "Learn Digital Safety",
+
+  "nav": {
+    "home":           "Home",
+    "lessons":        "Lessons",
+    "link":           "Link Check",
+    "report":         "Report",
+    "back_to_portal": "Main Page"
+  },
+
+  "home": {
+    "welcome":        "Welcome! 🙏",
+    "subtitle":       "Learn digital safety today",
+    "daily_tip":      "Today's Tip",
+    "tip_text":       "Your OTP is your private password. Never share it with anyone.",
+    "emergency_btn":  "⚠️ I Was Scammed! / મને છેતર્યો!",
+    "start_learning": "Start Learning",
+    "progress":       "Your Progress",
+    "badges_earned":  "Badges Earned",
+    "lessons_done":   "Lessons Done"
+  },
+
+  "lessons": {
+    "title":       "Safety Lessons",
+    "subtitle":    "6 Lessons — Protect yourself from digital fraud",
+    "locked":      "🔒 Complete the previous lesson first",
+    "complete":    "✅ Complete",
+    "start":       "Start Lesson",
+    "continue":    "Continue",
+    "next_panel":  "Next →",
+    "prev_panel":  "← Back",
+    "listen":            "🔊 Listen",
+    "stop":              "⏹ Stop",
+    "back_to_home":      "Back to Home",
+    "back_to_dashboard": "Dashboard",
+    "back_to_portal":    "Main Page",
+    "quit_alert":        "Quitting the lesson"
+  },
+
+  "quiz": {
+    "title":       "Quiz",
+    "question_of": "Question {{current}} of {{total}}",
+    "correct":     "✅ Correct!",
+    "wrong":       "❌ Wrong — Correct answer:",
+    "score":       "Your Score: {{score}} / {{total}}",
+    "finish":      "Finish"
+  },
+
+  "badge": {
+    "earned":  "🏅 New Badge Earned!",
+    "share":   "Share on WhatsApp",
+    "continue":"Continue"
+  },
+
+  "link_check": {
+    "title":             "Link Checker",
+    "subtitle":          "Is a WhatsApp / SMS link safe?",
+    "placeholder":       "Paste a link here...",
+    "check_btn":         "Check",
+    "checking":          "Checking...",
+    "safe_result":       "✅ This link looks safe",
+    "danger_result":     "⛔ This link is DANGEROUS! Delete it.",
+    "unknown":           "⚠️ Not sure. Be careful.",
+    "safe_action":       "You can click this link — but always stay alert.",
+    "danger_action":     "Delete this message. Do NOT click. Call your bank.",
+    "domain_age":        "Domain created {{days}} days ago",
+    "new_domain_warning":"⚠️ Very new domain — scammers often use new sites"
+  },
+
+  "report": {
+    "title":          "Report",
+    "subtitle":       "Report a scam app or link",
+    "tab_app":        "Scam App",
+    "tab_link":       "Scam Link",
+    "tab_db":         "Database",
+    "app_name":       "App Name",
+    "app_url":        "Play Store link (if available)",
+    "publisher":      "Publisher / Company",
+    "scam_type":      "Type of Scam",
+    "scam_types": {
+      "fake_loan":    "Fake loan",
+      "fake_job":     "Fake job offer",
+      "fake_lottery": "Fake prize / lottery",
+      "fake_kyc":     "Fake KYC update",
+      "investment":   "Fake investment",
+      "other":        "Other"
+    },
+    "description":    "What happened? (briefly)",
+    "url_label":      "Suspicious link (paste here)",
+    "platform":       "Where did you see it?",
+    "platforms": {
+      "whatsapp": "WhatsApp",
+      "sms":      "SMS",
+      "facebook": "Facebook",
+      "other":    "Elsewhere"
+    },
+    "submit":         "Submit Report",
+    "submitted":      "✅ Report received! Thank you.",
+    "error":          "❌ Error — please try again",
+    "status": {
+      "reported":       "📋 Reported",
+      "under_review":   "🔍 Under Review",
+      "confirmed_scam": "⛔ Confirmed Scam"
+    },
+    "export_complaint": "Copy Complaint (cybercrime.gov.in)",
+    "export_copied":    "✅ Complaint copied!"
+  },
+
+  "database": {
+    "title":      "Scam Database",
+    "subtitle":   "{{count}} scam apps / links reported",
+    "search":     "Search app / link...",
+    "reports":    "{{n}} reports",
+    "empty":      "No entries yet",
+    "hall_shame": "⛔ Hall of Shame — Most Reported",
+    "tab_apps":   "Apps",
+    "tab_links":  "Links"
+  },
+
+  "emergency": {
+    "title":   "⚠️ Emergency Help",
+    "subtitle":"What happened? Tap one picture.",
+    "options": {
+      "otp":     "I shared my OTP",
+      "link":    "I clicked a link",
+      "money":   "I lost money",
+      "aadhaar": "I gave my Aadhaar / ID"
+    },
+    "steps_title": "Do these 3 things RIGHT NOW:",
+    "steps": {
+      "otp": [
+        "1. 📞 Call your bank: 1800-11-2211 (toll free)",
+        "2. 🔒 Block UPI / Net banking immediately",
+        "3. 📋 File complaint at: cybercrime.gov.in"
+      ],
+      "link": [
+        "1. 📵 Switch phone to Airplane mode",
+        "2. 🔑 Change all your passwords",
+        "3. 📋 File complaint at: cybercrime.gov.in"
+      ],
+      "money": [
+        "1. 📞 Call Cyber Crime helpline: 1930",
+        "2. 🏦 File a payment dispute in your UPI app",
+        "3. 📋 Go to cybercrime.gov.in within 24 hours"
+      ],
+      "aadhaar": [
+        "1. 🔒 Call UIDAI to lock Aadhaar: 1947",
+        "2. 🏦 Inform your bank immediately",
+        "3. 📋 File complaint at: cybercrime.gov.in"
+      ]
+    },
+    "helplines":      "📞 Useful Helplines",
+    "cyber_helpline": "Cyber Crime: 1930",
+    "bank_helpline":  "Bank fraud: 1800-11-2211",
+    "uidai":          "Aadhaar: 1947",
+    "back":           "← Back"
+  },
+
+  "lang_toggle": {
+    "switch_to_en": "Switch to English",
+    "switch_to_gu": "ગુજરાતીમાં જુઓ"
+  }
+}

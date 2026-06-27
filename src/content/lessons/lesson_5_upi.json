@@ -1,0 +1,82 @@
+{
+  "id": "lesson_5_upi",
+  "badge": "upi_guardian",
+  "badgeLabel": { "gu": "UPI ગાર્ડિયન", "en": "UPI Guardian" },
+  "character": { "name": "Heena", "age": 35, "emoji": "👩‍💼" },
+  "gu": {
+    "title": "UPI 'Request' = ચૂકવણી!",
+    "subtitle": "UPI collect request ઠગ",
+    "panels": [
+      { "type": "intro", "text": "Heena OLX પર phone sell કરી રહી હતી. Buyer એ UPI request send કર્યો.", "image": "👩‍💼📱" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — ખોટો UPI request",
+        "text": "PhonePe notification: 'Rahul Kumar requests ₹15,000 — RECEIVE PAYMENT — tap to accept'",
+        "redFlags": [
+          "'Receive payment' button actually = PAY — UPI request = YOU send money",
+          "Seller ક્યારેય UPI request accept ન કરે — buyer payment send કરે",
+          "Notification design ઠગ modify કરી 'receive' show કરે"
+        ]
+      },
+      { "type": "decision", "question": "Heena શું કરે?",
+        "correct": "Request DECLINE કરો — buyer ને directly transfer કરવા કહો",
+        "wrong": "'Receive Payment' button tap કરો" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Button tap → ₹15,000 Heena ના account માંથી ગઈ! 😢",
+        "rightOutcome": "✅ Heena એ decline કર્યો — buyer ની directly transfer accept કરી 🎉" },
+      { "type": "takeaway", "rule": "UPI 'request accept' = TUM PAISA MOKLO. Receive nahi.", "subtext": "Payment RECEIVE કરવા — NOTHING tap ન કરો. Buyer himself transfer કરે." }
+    ]
+  },
+  "en": {
+    "title": "UPI Request = You Pay!",
+    "subtitle": "UPI Collect Request Scam",
+    "panels": [
+      { "type": "intro", "text": "Heena was selling a phone on OLX. The buyer sent her a UPI request.", "image": "👩‍💼📱" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — Fake UPI request",
+        "text": "PhonePe notification: 'Rahul Kumar requests ₹15,000 — RECEIVE PAYMENT — tap to accept'",
+        "redFlags": [
+          "The 'Receive payment' button actually = YOU SEND money — UPI request means you pay",
+          "As a seller, never accept UPI requests — buyer must send directly",
+          "Scammers modify notification design to show 'receive' to trick you"
+        ]
+      },
+      { "type": "decision", "question": "What should Heena do?",
+        "correct": "DECLINE the request — ask buyer to transfer directly",
+        "wrong": "Tap the 'Receive Payment' button" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Tapped button → ₹15,000 LEFT Heena's account! 😢",
+        "rightOutcome": "✅ Heena declined — received direct transfer from buyer 🎉" },
+      { "type": "takeaway", "rule": "UPI 'request accept' = YOU SEND MONEY. Not receive.", "subtext": "To RECEIVE a payment — tap nothing. The buyer sends money to you directly." }
+    ]
+  },
+  "quiz": [
+    { "id": "q1",
+      "gu": "UPI 'collect request' accept કરવાથી શું થાય?",
+      "en": "What happens when you accept a UPI collect request?",
+      "options": {
+        "gu": ["Money receive થાય", "Money send થઈ જાય", "Nothing", "Account verify"],
+        "en": ["You receive money", "You send money", "Nothing happens", "Account is verified"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Request ACCEPT = TUM PAISA MOKLYA — receive nai.", "en": "Accepting a request = YOU SEND money — you don't receive it." }
+    },
+    { "id": "q2",
+      "gu": "OLX seller — buyer UPI request send કરે. Seller?",
+      "en": "You're an OLX seller. The buyer sends you a UPI request. You should:",
+      "options": {
+        "gu": ["Accept કરો", "Decline — buyer ને send કરવા કહો", "Half accept", "Contact OLX"],
+        "en": ["Accept it", "Decline — ask buyer to send directly", "Partially accept", "Contact OLX"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Seller ક્યારેય UPI request accept ન કરે.", "en": "A seller should never accept UPI requests." }
+    },
+    { "id": "q3",
+      "gu": "Payment RECEIVE કરવા UPI app માં?",
+      "en": "To RECEIVE a payment on UPI:",
+      "options": {
+        "gu": ["Request accept", "Nothing — sender directly transfer", "QR code share", "B અને C બંને"],
+        "en": ["Accept a request", "Nothing — sender transfers directly", "Share QR code", "B and C both"]
+      },
+      "correct": 3,
+      "explanation": { "gu": "QR code share અથવા UPI ID share — bus. Request accept ન કરો.", "en": "Share your QR code or UPI ID — that's it. Never accept a request." }
+    }
+  ]
+}

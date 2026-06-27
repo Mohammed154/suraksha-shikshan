@@ -1,0 +1,82 @@
+{
+  "id": "lesson_3_link",
+  "badge": "link_detective",
+  "badgeLabel": { "gu": "Link ડિટેક્ટિવ", "en": "Link Detective" },
+  "character": { "name": "Kiran", "age": 22, "emoji": "🧑" },
+  "gu": {
+    "title": "આ link safe છે?",
+    "subtitle": "Phishing link ઠગ",
+    "panels": [
+      { "type": "intro", "text": "Kiran ને SMS આવ્યો: 'તમારો parcel ready છે. Delivery confirm કરો.'", "image": "🧑📦" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — ખોટો SMS",
+        "text": "SMS: 'Your India Post parcel is on hold. Click: http://indiapost-delivery.xyz/track123'",
+        "redFlags": [
+          "Official India Post link: indiapost.gov.in — .xyz .com .net suspicious",
+          "Link URL ધ્યાન થી જુઓ — 'indiapost-delivery.xyz' fake",
+          "Parcel track ક્યારેય SMS link ન આવે — direct website check કરો"
+        ]
+      },
+      { "type": "decision", "question": "Kiran શું કરે?",
+        "correct": "Link click ન કરો — indiapost.gov.in સીધી website open કરો",
+        "wrong": "SMS link click કરો" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Fake site — bank details enter કર્યા → account hack 😢",
+        "rightOutcome": "✅ Kiran official website ગઈ → parcel safe track! 🎉" },
+      { "type": "takeaway", "rule": "Link click કરતા પહેલાં URL ધ્યાન થી વાંચો.", "subtext": ".gov.in = Government (safe). .xyz .click .win .loan = suspicious." }
+    ]
+  },
+  "en": {
+    "title": "Is This Link Safe?",
+    "subtitle": "Phishing Link Scam",
+    "panels": [
+      { "type": "intro", "text": "Kiran received an SMS: 'Your parcel is ready. Confirm delivery.'", "image": "🧑📦" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — Fake SMS",
+        "text": "SMS: 'Your India Post parcel is on hold. Click: http://indiapost-delivery.xyz/track123'",
+        "redFlags": [
+          "Official India Post link is indiapost.gov.in — .xyz .com .net are suspicious",
+          "Read the URL carefully — 'indiapost-delivery.xyz' is fake",
+          "Parcels are never tracked via SMS links — visit the website directly"
+        ]
+      },
+      { "type": "decision", "question": "What should Kiran do?",
+        "correct": "Don't click — open indiapost.gov.in directly",
+        "wrong": "Click the SMS link" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Fake site — entered bank details → account hacked 😢",
+        "rightOutcome": "✅ Kiran went to the official website → parcel tracked safely! 🎉" },
+      { "type": "takeaway", "rule": "Read the URL carefully before clicking any link.", "subtext": ".gov.in = Government (safe). .xyz .click .win .loan = suspicious." }
+    ]
+  },
+  "quiz": [
+    { "id": "q1",
+      "gu": "Safe link કઈ છે?",
+      "en": "Which link is safe?",
+      "options": {
+        "gu": ["sbi-bank-update.xyz", "sbi.co.in", "sbi-login.com", "sbi.help"],
+        "en": ["sbi-bank-update.xyz", "sbi.co.in", "sbi-login.com", "sbi.help"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "sbi.co.in official bank link — .co.in India certified.", "en": "sbi.co.in is the official bank link — .co.in is India certified." }
+    },
+    { "id": "q2",
+      "gu": "SMS link click ન કરો — direct website જ visit કરો. આ advice ક્યારે?",
+      "en": "Don't click SMS links — visit the website directly. When should you do this?",
+      "options": {
+        "gu": ["ક્યારેક", "ક્યારેય નહીં", "હંમેશાં", "Bank link ક્યારે"],
+        "en": ["Sometimes", "Never", "Always", "Only for bank links"]
+      },
+      "correct": 2,
+      "explanation": { "gu": "હંમેશાં — SMS / WhatsApp link ક્યારેય click ન કરો.", "en": "Always — never click links in SMS or WhatsApp." }
+    },
+    { "id": "q3",
+      "gu": ".gov.in link = ?",
+      "en": ".gov.in link = ?",
+      "options": {
+        "gu": ["Suspicious", "Indian Government — safe", "Private company", "Unknown"],
+        "en": ["Suspicious", "Indian Government — safe", "Private company", "Unknown"]
+      },
+      "correct": 1,
+      "explanation": { "gu": ".gov.in = Indian Government certified website.", "en": ".gov.in = Indian Government certified website." }
+    }
+  ]
+}

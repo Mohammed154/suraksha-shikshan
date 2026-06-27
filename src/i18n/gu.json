@@ -1,0 +1,165 @@
+{
+  "app_name": "સુરક્ષા શિક્ષણ",
+  "tagline": "ડિજિટલ સુરક્ષા શીખો",
+
+  "nav": {
+    "home":           "ઘર",
+    "lessons":        "પાઠ",
+    "link":           "લિંક તપાસ",
+    "report":         "નોંધો",
+    "back_to_portal": "મુખ્ય પૃષ્ઠ"
+  },
+
+  "home": {
+    "welcome":        "નમસ્તે! 🙏",
+    "subtitle":       "આજે ડિજિટલ સુરક્ષા શીખો",
+    "daily_tip":      "આજની ટિપ",
+    "tip_text":       "OTP એ તમારો ખાનગી પાસવર્ડ છે. ક્યારેય share ન કરો.",
+    "emergency_btn":  "⚠️ મને છેતર્યો! / I Was Scammed!",
+    "start_learning": "શીખવાનું શરૂ કરો",
+    "progress":       "તમારી પ્રગતિ",
+    "badges_earned":  "મેળવેલ બેઝ",
+    "lessons_done":   "પૂર્ણ પાઠ"
+  },
+
+  "lessons": {
+    "title":       "સલામત પાઠ",
+    "subtitle":    "6 પાઠ — ડિજિટલ ઠગથી બચો",
+    "locked":      "🔒 આ પાઠ હજુ lock છે",
+    "complete":    "✅ પૂર્ણ",
+    "start":       "પાઠ શરૂ કરો",
+    "continue":    "આગળ ચાલો",
+    "next_panel":  "આગળ →",
+    "prev_panel":  "← પાછળ",
+    "listen":            "🔊 સાંભળો",
+    "stop":              "⏹ રોકો",
+    "back_to_home":      "હોમ પર પાછા જાઓ",
+    "back_to_dashboard": "ડેસ્કબોર્ડ",
+    "back_to_portal":    "મુખ્ય પૃષ્ઠ",
+    "quit_alert":        "પાઠ છોડી રહ્યા છો"
+  },
+
+  "quiz": {
+    "title":        "પ્રશ્નોત્તરી",
+    "question_of":  "પ્રશ્ન {{current}} / {{total}}",
+    "correct":      "✅ સાચો જવાબ!",
+    "wrong":        "❌ ખોટો — સાચો જવાબ:",
+    "score":        "તમારો સ્કોર: {{score}} / {{total}}",
+    "finish":       "પૂર્ણ કરો"
+  },
+
+  "badge": {
+    "earned":  "🏅 નવો બેઝ મળ્યો!",
+    "share":   "WhatsApp પર share કરો",
+    "continue":"ચાલુ રાખો"
+  },
+
+  "link_check": {
+    "title":        "લિંક તપાસ",
+    "subtitle":     "WhatsApp / SMS ની link સુરક્ષિત છે?",
+    "placeholder":  "link અહીં paste કરો...",
+    "check_btn":    "તપાસો",
+    "checking":     "તપાસ થઈ રહી છે...",
+    "safe_result":  "✅ આ link સુરક્ષિત લાગે છે",
+    "danger_result":"⛔ આ link ખતરનાક છે! Delete કરો.",
+    "unknown":      "⚠️ ખાતરી નથી. સાવધ રહો.",
+    "safe_action":  "આ link click કરી શકો — પણ હંમેશાં સાવધ રહો.",
+    "danger_action":"આ message Delete કરો. Link click ન કરો. Bank ને call કરો.",
+    "domain_age":   "Domain {{days}} દિવસ પહેલા બન્યું",
+    "new_domain_warning": "⚠️ નવું domain — ઠગ ઘણી વાર નવી sites બનાવે છે"
+  },
+
+  "report": {
+    "title":          "નોંધો",
+    "subtitle":       "ખોટી app / link ની જાણ કરો",
+    "tab_app":        "ખોટી ઍપ",
+    "tab_link":       "ખોટી link",
+    "tab_db":         "ભંડાર",
+    "app_name":       "ઍપ નું નામ",
+    "app_url":        "Play Store link (જો હોય)",
+    "publisher":      "Publisher / Company",
+    "scam_type":      "ઠગ નો પ્રકાર",
+    "scam_types": {
+      "fake_loan":    "નકલી loan",
+      "fake_job":     "નકલી નોકરી",
+      "fake_lottery": "નકલી ઇનામ / lottery",
+      "fake_kyc":     "નકલી KYC",
+      "investment":   "નકલી investment",
+      "other":        "બીજો"
+    },
+    "description":    "શું થયું? (ટૂંકમાં)",
+    "url_label":      "Suspicious link (paste કરો)",
+    "platform":       "ક્યાં મળ્યું?",
+    "platforms": {
+      "whatsapp": "WhatsApp",
+      "sms":      "SMS",
+      "facebook": "Facebook",
+      "other":    "બીજે"
+    },
+    "submit":         "નોંધ કરો",
+    "submitted":      "✅ નોંધ મળી! આભાર.",
+    "error":          "❌ error — ફરી try કરો",
+    "status": {
+      "reported":       "📋 નોંધ્યું",
+      "under_review":   "🔍 તપાસ ચાલે છે",
+      "confirmed_scam": "⛔ ઠગ સાબિત"
+    },
+    "export_complaint": "ફરિયાદ copy કરો (cybercrime.gov.in)",
+    "export_copied":    "✅ ફરિયાદ copy થઈ!"
+  },
+
+  "database": {
+    "title":        "ઠગ ભંડાર",
+    "subtitle":     "{{count}} ઠગ ઍપ / link નોંધ્યા",
+    "search":       "ઍપ / link શોધો...",
+    "reports":      "{{n}} ફરિયાદ",
+    "empty":        "હજુ કોઈ નોંધ નથી",
+    "hall_shame":   "⛔ Hall of Shame — સૌથી વધુ reported",
+    "tab_apps":     "ઍપ",
+    "tab_links":    "Links"
+  },
+
+  "emergency": {
+    "title":      "⚠️ મદદ!",
+    "subtitle":   "શું થયું? એક ફોટો choose કરો",
+    "options": {
+      "otp":     "OTP share કર્યો",
+      "link":    "Link click કર્યી",
+      "money":   "પૈસા ગયા",
+      "aadhaar": "Aadhaar / ID આપ્યો"
+    },
+    "steps_title": "આ 3 કામ હમણાં જ કરો:",
+    "steps": {
+      "otp": [
+        "1. 📞 Bank ને call કરો: 1800-11-2211 (toll free)",
+        "2. 🔒 UPI / Net banking block કરો",
+        "3. 📋 Cybercrime portal પર ફરિયાદ: cybercrime.gov.in"
+      ],
+      "link": [
+        "1. 📵 Phone ને Airplane mode પર રાખો",
+        "2. 🔑 બધા passwords બદલો",
+        "3. 📋 Cybercrime portal પર ફરિયાદ: cybercrime.gov.in"
+      ],
+      "money": [
+        "1. 📞 Bank ને call કરો: 1930 (Cyber Crime helpline)",
+        "2. 🏦 UPI app માં payment dispute file કરો",
+        "3. 📋 Cybercrime portal: cybercrime.gov.in — 24 કલાક માં"
+      ],
+      "aadhaar": [
+        "1. 🔒 UIDAI helpline: 1947 — Aadhaar lock કરો",
+        "2. 🏦 Bank ને જાણ કરો",
+        "3. 📋 Cybercrime portal: cybercrime.gov.in"
+      ]
+    },
+    "helplines":    "📞 ઉપયોગી helplines",
+    "cyber_helpline": "Cyber Crime: 1930",
+    "bank_helpline":  "Bank fraud: 1800-11-2211",
+    "uidai":          "Aadhaar: 1947",
+    "back":           "← પાછળ"
+  },
+
+  "lang_toggle": {
+    "switch_to_en": "Switch to English",
+    "switch_to_gu": "ગુજરાતીમાં જુઓ"
+  }
+}

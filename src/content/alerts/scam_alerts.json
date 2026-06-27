@@ -1,0 +1,77 @@
+[
+  {
+    "id": "alert_001",
+    "date": "2026-06-20",
+    "severity": "high",
+    "gu": {
+      "title": "⚠️ KBC Lottery ઠગ ફેલાઈ રહ્યો છે",
+      "body": "WhatsApp પર 'KBC ₹25 લાખ' message ફેલાઈ રહ્યો છે. Delete કરો. Reply ન કરો.",
+      "action": "Message Delete કરો"
+    },
+    "en": {
+      "title": "⚠️ KBC Lottery Scam Spreading",
+      "body": "A 'KBC ₹25 lakh winner' message is spreading on WhatsApp. Delete it. Do not reply.",
+      "action": "Delete the message"
+    }
+  },
+  {
+    "id": "alert_002",
+    "date": "2026-06-18",
+    "severity": "high",
+    "gu": {
+      "title": "⚠️ Fake India Post SMS — Gujarat",
+      "body": "Fake SMS 'indiapost-parcel.xyz' — real India Post: indiapost.gov.in — .xyz link click ન કરો.",
+      "action": "SMS Delete કરો"
+    },
+    "en": {
+      "title": "⚠️ Fake India Post SMS — Gujarat",
+      "body": "Fake SMS from 'indiapost-parcel.xyz' circulating. Real India Post site: indiapost.gov.in — do NOT click .xyz links.",
+      "action": "Delete the SMS"
+    }
+  },
+  {
+    "id": "alert_003",
+    "date": "2026-06-15",
+    "severity": "medium",
+    "gu": {
+      "title": "🔍 Fake Loan App — 'QuickRupee'",
+      "body": "'QuickRupee' app Play Store ઉપર — fake loan, contacts access, blackmail. Uninstall કરો.",
+      "action": "App Uninstall કરો"
+    },
+    "en": {
+      "title": "🔍 Fake Loan App — 'QuickRupee'",
+      "body": "'QuickRupee' app on Play Store — fake loans, accesses contacts, then blackmails. Uninstall immediately.",
+      "action": "Uninstall the App"
+    }
+  },
+  {
+    "id": "alert_004",
+    "date": "2026-06-12",
+    "severity": "high",
+    "gu": {
+      "title": "⚠️ UIDAI Impersonation Calls",
+      "body": "Gujarat માં fake UIDAI calls — 'Aadhaar block'. UIDAI ક્યારેય phone ન કરે. 1947 call કરો.",
+      "action": "Phone muko, 1947 call karo"
+    },
+    "en": {
+      "title": "⚠️ UIDAI Impersonation Calls",
+      "body": "Fake UIDAI calls in Gujarat — 'Aadhaar will be blocked'. UIDAI never calls. Hang up and call 1947.",
+      "action": "Hang up, call 1947"
+    }
+  },
+  {
+    "id": "alert_005",
+    "date": "2026-06-08",
+    "severity": "medium",
+    "gu": {
+      "title": "🔍 Fake Work-From-Home Jobs",
+      "body": "Instagram / Telegram પર 'Amazon WFH ₹50,000' fake jobs. Registration fee ન ભરો.",
+      "action": "Offer Ignore karo"
+    },
+    "en": {
+      "title": "🔍 Fake Work-From-Home Jobs",
+      "body": "Fake 'Amazon WFH ₹50,000/month' jobs on Instagram / Telegram. Do not pay any registration fee.",
+      "action": "Ignore the offer"
+    }
+  }
+]

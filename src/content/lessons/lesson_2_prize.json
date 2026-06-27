@@ -1,0 +1,63 @@
+{
+  "id": "lesson_2_prize",
+  "badge": "prize_detector",
+  "badgeLabel": { "gu": "ઇનામ ડિટેક્ટર", "en": "Prize Detector" },
+  "character": { "name": "Savitaben", "age": 58, "emoji": "👩" },
+  "gu": {
+    "title": "ઇનામ સાચું નથી!",
+    "subtitle": "નકલી lottery / lucky draw",
+    "panels": [
+      { "type": "intro", "text": "Savitaben ને WhatsApp પર message આવ્યો: 'KBC માં ₹25 લાખ જીત્યા!'", "image": "👩📱" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — ખોટો message",
+        "text": "Message: 'Congratulations! You won ₹25,00,000. Claim now. Send ₹500 registration fee.'",
+        "redFlags": ["Real lottery ક્યારેય registration fee નથી લેતી", "WhatsApp message — official lottery notification નહીં", "₹500 'fee' — ઠગ ₹ 500 ઉઘરાવે છે"] },
+      { "type": "decision", "question": "Savitaben શું કરે?",
+        "correct": "Message delete કરો, family ને બતાવો",
+        "wrong": "₹500 pay કરો" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ ₹500 pay કર્યા → 'processing fee' ₹2000 → ₹5000 → ₹15000 — money ગઈ 😢",
+        "rightOutcome": "✅ Savitaben એ message delete કર્યો → safe! 🎉" },
+      { "type": "takeaway", "rule": "Real ઇનામ ક્યારેય 'fee' નથી માંગતું.", "subtext": "જો ઇનામ લેવા માટે પૈસા ભરવા પડે — તો તે 100% ઠગ છે." }
+    ]
+  },
+  "en": {
+    "title": "That Prize Is Fake!",
+    "subtitle": "Fake Lottery / Lucky Draw",
+    "panels": [
+      { "type": "intro", "text": "Savitaben received a WhatsApp message: 'You won ₹25 lakh in KBC!'", "image": "👩📱" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — Fake message",
+        "text": "Message: 'Congratulations! You won ₹25,00,000. Claim now. Send ₹500 registration fee.'",
+        "redFlags": ["Real lotteries never charge a registration fee", "WhatsApp message — not an official lottery notification", "₹500 'fee' — scammers collect fees and disappear"] },
+      { "type": "decision", "question": "What should Savitaben do?",
+        "correct": "Delete the message and tell a family member",
+        "wrong": "Pay the ₹500 fee" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Paid ₹500 → then ₹2000 → ₹5000 → ₹15000 — all gone 😢",
+        "rightOutcome": "✅ Savitaben deleted the message → stayed safe! 🎉" },
+      { "type": "takeaway", "rule": "Real prizes never ask for a 'fee'.", "subtext": "If you have to pay money to receive a prize — it is 100% a scam." }
+    ]
+  },
+  "quiz": [
+    { "id": "q1",
+      "gu": "WhatsApp પર lottery message આવ્યો. Registration fee ₹500 માંગે. તમે?",
+      "en": "A WhatsApp lottery message asks for a ₹500 registration fee. You:",
+      "options": { "gu": ["Pay કરો", "Delete કરો", "Forward કરો", "Reply કરો"], "en": ["Pay it", "Delete it", "Forward it", "Reply to it"] },
+      "correct": 1,
+      "explanation": { "gu": "Real lottery fee નથી લેતી.", "en": "Real lotteries never charge a fee." }
+    },
+    { "id": "q2",
+      "gu": "KBC / Jio lottery message WhatsApp પર — real છે?",
+      "en": "A KBC / Jio lottery message on WhatsApp — is it real?",
+      "options": { "gu": ["હા, real", "ના, ઠગ", "Verify કરો", "Pay કરો"], "en": ["Yes, real", "No, it's a scam", "Verify first", "Pay first"] },
+      "correct": 1,
+      "explanation": { "gu": "Official lottery WhatsApp message નથી મોકલતી.", "en": "Official lotteries do not send WhatsApp messages." }
+    },
+    { "id": "q3",
+      "gu": "ઠગ 'ઇનામ' message માં સૌ પ્રથમ શું માંગે?",
+      "en": "What do scammers ask for first in a 'prize' message?",
+      "options": { "gu": ["Bank account", "OTP", "Registration fee", "Aadhaar"], "en": ["Bank account", "OTP", "Registration fee", "Aadhaar"] },
+      "correct": 2,
+      "explanation": { "gu": "Small fee — પછી વધુ ને વધુ demand.", "en": "Small fee first — then bigger and bigger demands." }
+    }
+  ]
+}

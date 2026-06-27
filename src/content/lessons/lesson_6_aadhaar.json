@@ -1,0 +1,82 @@
+{
+  "id": "lesson_6_aadhaar",
+  "badge": "identity_protector",
+  "badgeLabel": { "gu": "ઓળખ રક્ષક", "en": "Identity Protector" },
+  "character": { "name": "Jayshreeben", "age": 72, "emoji": "👵" },
+  "gu": {
+    "title": "Aadhaar સંભાળ",
+    "subtitle": "Identity theft / Aadhaar fraud",
+    "panels": [
+      { "type": "intro", "text": "Jayshreeben ને call આવ્યો: 'UIDAI office. Aadhaar update ન કરો તો block!'", "image": "👵🪪" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — ખોટો UIDAI call",
+        "text": "Caller: 'Aadhaar expired! Send photo of Aadhaar card + fingerprint + OTP — otherwise block in 2 hours!'",
+        "redFlags": [
+          "Aadhaar ક્યારેય 'expire' ન થાય",
+          "UIDAI ક્યારેય phone પર Aadhaar photo ન માંગે",
+          "'2 hours' — ઉતાવળ ઉભી કરે — time for thinking ન આપે"
+        ]
+      },
+      { "type": "decision", "question": "Jayshreeben શું કરે?",
+        "correct": "Phone મૂકો, UIDAI official number 1947 call કરો",
+        "wrong": "Aadhaar photo + OTP send કરો" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Aadhaar share → bank account fraud, loan ઠગ ના નામ 😢",
+        "rightOutcome": "✅ Jayshreeben 1947 call — UIDAI confirmed no such requirement 🎉" },
+      { "type": "takeaway", "rule": "Aadhaar card ની photo ક્યારેય WhatsApp / phone પર ન મોકલો.", "subtext": "Aadhaar expire ન થાય. UIDAI ક્યારેય phone/WhatsApp પર document ન માંગે." }
+    ]
+  },
+  "en": {
+    "title": "Protect Your Aadhaar",
+    "subtitle": "Identity Theft / Aadhaar Fraud",
+    "panels": [
+      { "type": "intro", "text": "Jayshreeben received a call: 'UIDAI office. Update Aadhaar or it will be blocked!'", "image": "👵🪪" },
+      { "type": "threat", "isSimulation": true, "simulationLabel": "SIMULATION — Fake UIDAI call",
+        "text": "Caller: 'Aadhaar expired! Send photo of Aadhaar card + fingerprint + OTP — otherwise blocked in 2 hours!'",
+        "redFlags": [
+          "Aadhaar cards never expire",
+          "UIDAI never asks for Aadhaar photo over the phone",
+          "'2 hours' — artificial urgency — no time to think"
+        ]
+      },
+      { "type": "decision", "question": "What should Jayshreeben do?",
+        "correct": "Hang up and call UIDAI official number: 1947",
+        "wrong": "Send the Aadhaar photo + OTP" },
+      { "type": "consequence",
+        "wrongOutcome": "❌ Shared Aadhaar → bank fraud, loans taken in her name 😢",
+        "rightOutcome": "✅ Jayshreeben called 1947 — UIDAI confirmed no such requirement 🎉" },
+      { "type": "takeaway", "rule": "Never send your Aadhaar photo on WhatsApp or phone.", "subtext": "Aadhaar does not expire. UIDAI never asks for documents over phone or WhatsApp." }
+    ]
+  },
+  "quiz": [
+    { "id": "q1",
+      "gu": "Aadhaar card expire થાય?",
+      "en": "Does an Aadhaar card expire?",
+      "options": {
+        "gu": ["હા, 5 વર્ષ", "ના, ક્યારેય નહીં", "10 વર્ષ", "Birthday ઉપર"],
+        "en": ["Yes, every 5 years", "No, never", "Every 10 years", "On your birthday"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "Aadhaar ક્યારેય expire ન થાય.", "en": "Aadhaar never expires." }
+    },
+    { "id": "q2",
+      "gu": "UIDAI official helpline number?",
+      "en": "What is the UIDAI official helpline number?",
+      "options": {
+        "gu": ["1800", "1947", "112", "100"],
+        "en": ["1800", "1947", "112", "100"]
+      },
+      "correct": 1,
+      "explanation": { "gu": "UIDAI Aadhaar helpline: 1947 (free call).", "en": "UIDAI Aadhaar helpline: 1947 (free call)." }
+    },
+    { "id": "q3",
+      "gu": "Aadhaar photo WhatsApp પર ક્યારે send કરો?",
+      "en": "When should you send your Aadhaar photo on WhatsApp?",
+      "options": {
+        "gu": ["Bank update", "Government office", "ક્યારેય નહીં", "Hospital"],
+        "en": ["For bank update", "For government office", "Never", "For hospital admission"]
+      },
+      "correct": 2,
+      "explanation": { "gu": "Aadhaar photo WhatsApp / phone પર ક્યારેય ન મોકલો.", "en": "Never send your Aadhaar photo via WhatsApp or phone." }
+    }
+  ]
+}
