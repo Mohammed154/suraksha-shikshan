@@ -161,5 +161,20 @@
   "lang_toggle": {
     "switch_to_en": "Switch to English",
     "switch_to_gu": "ગુજરાતીમાં જુઓ"
+  },
+  "news": {
+    "title": "Cyber Crime News",
+    "subtitle": "Scams and fraud news in India for awareness",
+    "read_more": "Read More",
+    "how_to_protect": "💡 How to Protect Yourself:",
+    "all_categories": "All News",
+    "cat_trending": "👮 Trending",
+    "cat_banking": "⚡ UPI & Banking",
+    "cat_jobs": "💸 Fake Jobs",
+    "cat_advisory": "💡 Advisories",
+    "read_all": "Read Cyber Crime News →",
+    "back_to_home": "← Back to Home",
+    "listen_news": "🔊 Listen News",
+    "stop_news": "⏹ Stop"
   }
 }

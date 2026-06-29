@@ -1,0 +1,78 @@
+[
+  {
+    "id": "news_1",
+    "category": "trending",
+    "date": "2026-06-29",
+    "icon": "👮",
+    "readTime": "3 min",
+    "gu": {
+      "title": "મુંબઈ: નકલી CBI અધિકારી બનીને ફેડએક્સ કુરિયર (FedEx Courier) ના નામે ₹૧૫ લાખની ઠગાઈ",
+      "summary": "વેપારીને ફોન કરી તેમના પાર્સલમાં ડ્રગ્સ હોવાનો દાવો કરી વોટ્સએપ વિડીયો કોલ પર 'ડિજિટલ એરેસ્ટ' કરી નાણાં પડાવ્યા.",
+      "content": "તાજેતરમાં જ બનેલી એક વાસ્તવિક ઘટનામાં, મુંબઈના એક નાગરિકને કુરિયર કંપનીના નામે ફોન આવ્યો. ફોન કરનારે કહ્યું કે તમારા નામે તાઈવાન મોકલેલ પાર્સલ જપ્ત થયું છે જેમાં ડ્રગ્સ અને પાસપોર્ટ છે. ગભરાવીને આરોપીઓએ પીડિતને સ્કાઈપ કોલ પર જોડ્યો, જ્યાં નકલી CBI અને સાયબર સેલના ગણવેશધારી લોકો હતા. તેમણે પીડિતને ૨૪ કલાક કેમેરા સામે બેસી રહેવા ('ડિજિટલ અરેસ્ટ') મજબૂર કર્યા અને તપાસ પતાવવાના બહાને અલગ અલગ બેંક એકાઉન્ટમાં ₹૧૫ લાખ ટ્રાન્સફર કરાવી લીધા.",
+      "tip": "યાદ રાખો: કોઈપણ કુરિયર કંપની કે પોલીસ ફોન પર ગુના અંગે નાણાં માંગતી નથી. જો કોઈ વિડીયો કોલ પર તપાસ ચાલુ રાખવા દબાણ કરે, તો તે ઠગાઈ છે. તરત જ પોલીસને જાણ કરો."
+    },
+    "en": {
+      "title": "Mumbai: Businessman Extorted of ₹15 Lakhs in FedEx Drug Courier Scam",
+      "summary": "Fraudsters posing as CBI officers placed the victim under 'digital arrest' on Skype, claiming an illegal package was sent in his name.",
+      "content": "In a recent real-world case in Mumbai, a resident received a phone call claiming to be from FedEx courier. The caller stated that a parcel sent in his name to Taiwan containing MDMA (drugs) had been intercepted by customs. The call was transferred to fake cyber police on Skype wearing uniforms with CBI backgrounds. Under the pretext of a secret investigation, they forced the victim to stay in front of the camera ('digital arrest') and transfer ₹15 Lakhs to clear his name.",
+      "tip": "Remember: Courier firms and police departments never request funds or bank transfers over calls to resolve cases. Ignore any requests for online interrogations."
+    }
+  },
+  {
+    "id": "news_2",
+    "category": "banking",
+    "date": "2026-06-28",
+    "icon": "⚡",
+    "readTime": "2 min",
+    "gu": {
+      "title": "ગુજરાત: PGVCL વીજળી બિલ કનેક્શન કાપવાનો SMS મોકલી ₹૩ લાખ ઉપાડી લીધા",
+      "summary": "નકલી ગ્રાહક કેર નંબર પર કોલ કરાવી AnyDesk સ્ક્રીન-શેરિંગ એપ ડાઉનલોડ કરાવીને ખાતું સાફ કર્યું.",
+      "content": "રાજકોટના એક વૃદ્ધાને મોબાઈલમાં મેસેજ મળ્યો: 'તમારું બિલ અપડેટ નથી, આજે રાત્રે કનેક્શન કટ થઈ જશે.' આપેલા નંબર પર સંપર્ક કરતા ઠગ ટોળકીએ કહ્યું કે બિલ ભરવા માટે ફોનમાં 'AnyDesk' નામની એપ નાખો. પીડિતે એપ ઇન્સ્ટોલ કરતા જ ઠગે તેમના ફોનની સ્ક્રીન જોઈ લીધી અને નેટ બેંકિંગ લોગિન તથા ઓટીપી (OTP) મેળવીને તેમના ખાતામાંથી ₹૩ લાખ ટ્રાન્સફર કરી લીધા.",
+      "tip": "યાદ રાખો: PGVCL કે અન્ય વીજ કંપનીઓ ક્યારેય પર્સનલ મોબાઈલ નંબર પરથી બિલ અપડેટના મેસેજ મોકલતી નથી. ક્યારેય કોઈના કહેવા પર AnyDesk કે TeamViewer જેવી એપ્સ ફોનમાં ન નાખો."
+    },
+    "en": {
+      "title": "Gujarat: Pensioner Loses ₹3 Lakhs to Fake PGVCL Electricity Cut Message",
+      "summary": "Victim called the fake support number and installed AnyDesk screen-sharing app, allowing scammers to view transaction OTPs.",
+      "content": "An elderly resident in Rajkot received an SMS warning: 'Your electricity bill is pending, power will be cut tonight at 9:30 PM. Contact officer immediately.' Upon calling, the scammer guided the victim to install 'AnyDesk' from the Play Store to verify the bill. Once installed, the scammer got access to the victim's screen, read the banking passwords and OTPs, and stole ₹3 Lakhs from the bank account.",
+      "tip": "Remember: Power distribution companies never ask customers to download remote-desktop apps like AnyDesk, RustDesk, or TeamViewer. Do not call numbers from unofficial SMS."
+    }
+  },
+  {
+    "id": "news_3",
+    "category": "banking",
+    "date": "2026-06-27",
+    "icon": "☝️",
+    "readTime": "3 min",
+    "gu": {
+      "title": "નવો ખતરો: ઓટીપી વગર પૈસા ચોરી — AePS બાયોમેટ્રિક ફિંગરપ્રિન્ટ ક્લોનિંગ",
+      "summary": "સરકારી દસ્તાવેજોમાંથી મેળવેલ અંગૂઠાની નકલ સિલિકોન પર બનાવીને આધાર લિંક એકાઉન્ટમાંથી પૈસા ગાયબ કર્યા.",
+      "content": "ભારતમાં ઓટીપી વગર પૈસા ઉપાડવાનો એક નવો કિસ્સો પ્રકાશમાં આવ્યો છે. જમીનની રજીસ્ટ્રી ઓફિસ કે સરકારી દસ્તાવેજોમાંથી છેતરપિંડી કરનારાઓ નાગરિકોના અંગૂઠાના બાયોમેટ્રિક્સ પ્રિન્ટ મેળવે છે. ત્યારબાદ તેને ગુંદર અથવા સિલિકોન પર ક્લોન (નકલ) કરે છે. આ નકલી ફિંગરપ્રિન્ટનો ઉપયોગ કરીને તેઓ 'આધાર ઇનેબલ્ડ પેમેન્ટ સિસ્ટમ' (AePS) મશીનો દ્વારા ગ્રાહકના ખાતામાંથી ઓટીપી કે ડેબિટ કાર્ડ વગર પૈસા ઉપાડી લે છે.",
+      "tip": "બચાવ: તમારા આધાર કાર્ડ બાયોમેટ્રિક્સને હંમેશા સુરક્ષિત રાખો. સરકારી 'mAadhaar' એપ અથવા UIDAI પોર્ટલ પર જઈને તમારા બાયોમેટ્રિક્સને Lock કરો જેથી કોઈ તેનો ખોટો ઉપયોગ ન કરી શકે."
+    },
+    "en": {
+      "title": "OTP-less Theft Alert: Aadhaar AePS Biometric Cloning Fraud",
+      "summary": "Scammers clone fingerprint prints onto silicone from land documents to withdraw cash from Aadhaar-linked accounts without OTPs.",
+      "content": "A high-tech scam has emerged in India targeting the Aadhaar Enabled Payment System (AePS). Fraudsters retrieve fingerprint scans of property buyers from public registry documents. They clone these prints onto cheap silicone sheets. Using these cloned fingerprints and the victim's Aadhaar number, they withdraw money at local business correspondents and banking points without needing any mobile OTP or debit card.",
+      "tip": "Protection: Secure your biometrics. Download the official 'mAadhaar' app or visit the UIDAI website to LOCK your biometric access. You can unlock it instantly when needed."
+    }
+  },
+  {
+    "id": "news_4",
+    "category": "jobs",
+    "date": "2026-06-26",
+    "icon": "💸",
+    "readTime": "3 min",
+    "gu": {
+      "title": "ટેલિગ્રામ જોબ કૌભાંડ: યુટ્યુબ વીડિયો લાઈક કરવાના નામે મહિલાએ ₹૭ લાખ ગુમાવ્યા",
+      "summary": "શરૂઆતમાં ₹૧૫૦ પેમેન્ટ આપી વિશ્વાસ જીત્યો, પછી ટાસ્ક ઇન્વેસ્ટમેન્ટના નામે મોટા નાણાં પડાવ્યા.",
+      "content": "અમદાવાદની એક ગૃહિણીને વોટ્સએપ પર પાર્ટ-ટાઇમ નોકરીની ઓફર મળી. તેને માત્ર યુટ્યુબ વીડિયો લાઈક કરવા અને હોટલ રેટિંગ્સ આપવાનું કામ મળ્યું. શરૂઆતના ૩ કામ માટે તેને ₹૪૫૦ મળ્યા. ત્યારબાદ તેને ટેલિગ્રામ પર જોડીને 'ક્રિપ્ટો ટાસ્ક' માં પૈસા રોકવા લાલચ અપાઈ. વધુ કમિશન મેળવવાની લાલચમાં તેણે ટુકડે-ટુકડે ₹૭ લાખ રોક્યા. જ્યારે પૈસા પાછા માંગ્યા ત્યારે સાયબર ગુનેગારોએ એકાઉન્ટ લોક કરી વધુ ટેક્સના નામે વધારાના પૈસાની માંગણી કરી.",
+      "tip": "યાદ રાખો: કોઈ પણ સાચી કંપની લાઈક કે રેટિંગ માટે કમિશન આપતી નથી, અને ક્યારેય રોકાણ કરવા માટે દબાણ કરતી નથી. આવા ટાસ્ક આધારિત ટેલિગ્રામ ગ્રુપથી દૂર રહો."
+    },
+    "en": {
+      "title": "Telegram Job Racket: Homemaker Scammed of ₹7 Lakhs via Video Like Tasks",
+      "summary": "Victim received small payouts of ₹150 for liking videos before being trapped into VIP prepaid task investments.",
+      "content": "A homemaker from Ahmedabad was contacted on WhatsApp with a part-time job offer. She was asked to like YouTube videos and rate hotels on Google Maps. For the first three ratings, she received ₹450 in her account. Believing it to be real, she joined a VIP Telegram channel where she was asked to deposit money for higher-paying crypto investment tasks. She invested ₹7 Lakhs, only for the scammers to lock her account and demand more taxes to withdraw.",
+      "tip": "Remember: No legitimate company pays for simple video likes or hotel ratings, and they never demand deposits to release salary. Stay away from task-based groups."
+    }
+  }
+]

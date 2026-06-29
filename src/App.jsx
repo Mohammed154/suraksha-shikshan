@@ -8,6 +8,7 @@ import LinkCheck from './screens/LinkCheck.jsx';
 import Report from './screens/Report.jsx';
 import ScamDatabase from './screens/ScamDatabase.jsx';
 import Emergency from './screens/Emergency.jsx';
+import CyberNews from './screens/CyberNews.jsx';
 
 function AppLayout() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/report"          element={<Report />} />
           <Route path="/report/database" element={<ScamDatabase />} />
           <Route path="/emergency"       element={<Emergency />} />
+          <Route path="/cyber-news"      element={<CyberNews />} />
         </Route>
       </Routes>
     </BrowserRouter>

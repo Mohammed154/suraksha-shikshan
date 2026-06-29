@@ -161,5 +161,20 @@
   "lang_toggle": {
     "switch_to_en": "Switch to English",
     "switch_to_gu": "ગુજરાતીમાં જુઓ"
+  },
+  "news": {
+    "title": "સાયબર ક્રાઈમ ન્યૂઝ",
+    "subtitle": "જાગૃતિ માટે ભારતમાં સાયબર ગુના અને છેતરપિંડીના અહેવાલો",
+    "read_more": "વધુ વાંચો",
+    "how_to_protect": "💡 બચવા માટેની ટિપ:",
+    "all_categories": "બધી ન્યૂઝ",
+    "cat_trending": "👮 પ્રચલિત",
+    "cat_banking": "⚡ બેંકિંગ અને UPI",
+    "cat_jobs": "💸 નકલી નોકરી",
+    "cat_advisory": "💡 સરકારી સૂચનાઓ",
+    "read_all": "સાયબર ક્રાઈમ ન્યૂઝ વાંચો →",
+    "back_to_home": "← હોમ પર પાછા જાઓ",
+    "listen_news": "🔊 ન્યૂઝ સાંભળો",
+    "stop_news": "⏹ રોકો"
   }
 }
