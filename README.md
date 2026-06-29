@@ -14,7 +14,7 @@ npm install
 
 # 2. Set up environment variables
 cp .env.example .env
-# → Fill in your Firebase credentials in .env
+# → Fill in your API keys in .env (optional for offline testing)
 
 # 3. Start development server
 npm run dev
@@ -48,29 +48,25 @@ suraksha-shikshan/
 │   ├── content/
 │   │   ├── lessons/        ← 6 JSON lesson files (Gujarati + English)
 │   │   └── alerts/         ← Weekly scam alerts JSON
-│   ├── firebase/
-│   │   ├── config.js       ← Firebase init
-│   │   └── functions/      ← Cloud Functions (link checker, auto-flag)
+│   ├── utils/
+│   │   └── localDatabase.js ← Local storage mock database
 │   ├── i18n/               ← Translation strings
 │   │   ├── gu.json         Gujarati UI strings
 │   │   └── en.json         English UI strings
 │   ├── hooks/
 │   │   ├── useSpeech.js    Web Speech API wrapper
-│   │   └── useProgress.js  Lesson progress (Firestore)
+│   │   └── useProgress.js  Lesson progress (localStorage)
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
 ├── .env.example            ← Copy to .env and fill credentials
-├── firebase.json
 ├── vite.config.js
 └── package.json
 ```
 
-## 🔧 Firebase Database Setup
+## 🔧 Local Database (localStorage)
 
-1. Create a Firebase project at https://console.firebase.google.com
-2. Enable **Firestore Database** and **Authentication** (enable **Anonymous** provider)
-3. Copy your project config into `.env` (refer to `.env.example`)
+No external database setup is required! The application uses an offline-first local database backed by the browser's `localStorage`. Realistic mock reports for scam apps and phishing links are seeded automatically on the first visit. Progress tracking is also persisted locally.
 
 ## 📱 Features
 
@@ -95,7 +91,7 @@ suraksha-shikshan/
 
 ## 🌐 Deployment to Vercel
 
-The project is configured for Vercel deployment, including Vercel Serverless Functions for API routes.
+The project is fully configured for Vercel deployment, including Vercel Serverless Functions for the link safety checker API routes.
 
 ### 1. Local Development
 ```bash
@@ -103,13 +99,7 @@ npm run dev
 ```
 
 ### 2. Vercel Environment Variables
-Configure the following environment variables in your Vercel project settings:
-- `VITE_FIREBASE_API_KEY`
-- `VITE_FIREBASE_AUTH_DOMAIN`
-- `VITE_FIREBASE_PROJECT_ID`
-- `VITE_FIREBASE_STORAGE_BUCKET`
-- `VITE_FIREBASE_MESSAGING_SENDER_ID`
-- `VITE_FIREBASE_APP_ID`
+Configure the following environment variables in your Vercel project settings for the link verification API:
 - `SAFE_BROWSING_API_KEY`
 - `WHOIS_API_KEY`
 

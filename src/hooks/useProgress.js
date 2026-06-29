@@ -1,10 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
-import {
-  doc, getDoc, setDoc, updateDoc, arrayUnion, serverTimestamp
-} from 'firebase/firestore';
-import { db, ensureAnonymousAuth } from '../firebase/config.js';
 
 const SESSION_KEY = 'ss_session_id';
+const PROGRESS_PREFIX = 'ss_progress_';
 
 function getOrCreateSessionId() {
   let id = localStorage.getItem(SESSION_KEY);
@@ -25,82 +22,88 @@ export function useProgress() {
   });
   const [loading, setLoading] = useState(true);
   const sessionId = getOrCreateSessionId();
+  const progressKey = `${PROGRESS_PREFIX}${sessionId}`;
 
-  // Load progress from Firestore on mount
+  // Load progress from localStorage on mount
   useEffect(() => {
     async function load() {
       try {
-        await ensureAnonymousAuth();
-        const ref  = doc(db, 'userProgress', sessionId);
-        const snap = await getDoc(ref);
-        if (snap.exists()) {
-          setProgress(snap.data());
+        const localData = localStorage.getItem(progressKey);
+        if (localData) {
+          setProgress(JSON.parse(localData));
         } else {
-          // First visit — create the document
-          await setDoc(ref, {
-            ...progress,
+          // First visit — create the local record
+          const initialData = {
+            lessonsCompleted: [],
+            quizScores: [],
+            badgesEarned: [],
+            confidenceRating: null,
+            language: 'gu',
             sessionId,
-            createdAt: serverTimestamp(),
-          });
+            createdAt: new Date().toISOString(),
+          };
+          localStorage.setItem(progressKey, JSON.stringify(initialData));
+          setProgress(initialData);
         }
       } catch (e) {
-        console.warn('Progress load failed (offline?):', e);
+        console.warn('Progress load failed:', e);
       } finally {
         setLoading(false);
       }
     }
     load();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [progressKey, sessionId]);
 
   const markLessonComplete = useCallback(async (lessonId) => {
     try {
-      const ref = doc(db, 'userProgress', sessionId);
-      await updateDoc(ref, {
-        lessonsCompleted: arrayUnion(lessonId),
-        updatedAt: serverTimestamp(),
-      });
-      setProgress((p) => ({
-        ...p,
-        lessonsCompleted: [...new Set([...p.lessonsCompleted, lessonId])],
-      }));
+      const localData = localStorage.getItem(progressKey);
+      let data = localData ? JSON.parse(localData) : { lessonsCompleted: [] };
+      
+      const newLessons = [...new Set([...(data.lessonsCompleted || []), lessonId])];
+      data.lessonsCompleted = newLessons;
+      data.updatedAt = new Date().toISOString();
+      
+      localStorage.setItem(progressKey, JSON.stringify(data));
+      setProgress(data);
     } catch (e) {
       console.warn('markLessonComplete failed:', e);
     }
-  }, [sessionId]);
+  }, [progressKey]);
 
   const saveQuizScore = useCallback(async (lessonId, score, total) => {
     try {
-      const ref   = doc(db, 'userProgress', sessionId);
+      const localData = localStorage.getItem(progressKey);
+      let data = localData ? JSON.parse(localData) : { quizScores: [] };
+      
       const entry = { lessonId, score, total, date: new Date().toISOString() };
-      await updateDoc(ref, {
-        quizScores: arrayUnion(entry),
-        updatedAt: serverTimestamp(),
-      });
-      setProgress((p) => ({ ...p, quizScores: [...p.quizScores, entry] }));
+      data.quizScores = [...(data.quizScores || []), entry];
+      data.updatedAt = new Date().toISOString();
+      
+      localStorage.setItem(progressKey, JSON.stringify(data));
+      setProgress(data);
     } catch (e) {
       console.warn('saveQuizScore failed:', e);
     }
-  }, [sessionId]);
+  }, [progressKey]);
 
   const earnBadge = useCallback(async (badgeId) => {
     try {
-      const ref = doc(db, 'userProgress', sessionId);
-      await updateDoc(ref, {
-        badgesEarned: arrayUnion(badgeId),
-        updatedAt: serverTimestamp(),
-      });
-      setProgress((p) => ({
-        ...p,
-        badgesEarned: [...new Set([...p.badgesEarned, badgeId])],
-      }));
+      const localData = localStorage.getItem(progressKey);
+      let data = localData ? JSON.parse(localData) : { badgesEarned: [] };
+      
+      const newBadges = [...new Set([...(data.badgesEarned || []), badgeId])];
+      data.badgesEarned = newBadges;
+      data.updatedAt = new Date().toISOString();
+      
+      localStorage.setItem(progressKey, JSON.stringify(data));
+      setProgress(data);
     } catch (e) {
       console.warn('earnBadge failed:', e);
     }
-  }, [sessionId]);
+  }, [progressKey]);
 
-  const isLessonComplete  = (id) => progress.lessonsCompleted.includes(id);
-  const hasBadge          = (id) => progress.badgesEarned.includes(id);
+  const isLessonComplete  = (id) => progress.lessonsCompleted?.includes(id) || false;
+  const hasBadge          = (id) => progress.badgesEarned?.includes(id) || false;
 
   return {
     progress,

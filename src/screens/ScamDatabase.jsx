@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { collection, getDocs, orderBy, query, limit } from 'firebase/firestore';
-import { db } from '../firebase/config.js';
+import { getScamApps, getSpamLinks } from '../utils/localDatabase.js';
 
 const STATUS_CONFIG = {
   reported:       { label: '📋 Reported',        bg: 'bg-gray-100 text-gray-600' },
@@ -24,10 +23,10 @@ export default function ScamDatabase() {
   useEffect(() => {
     async function load() {
       try {
-        const appsSnap  = await getDocs(query(collection(db, 'scamAppReports'),  orderBy('reportCount', 'desc'), limit(50)));
-        const linksSnap = await getDocs(query(collection(db, 'spamLinkReports'), orderBy('reportCount', 'desc'), limit(50)));
-        setApps(appsSnap.docs.map(d  => ({ id: d.id, ...d.data() })));
-        setLinks(linksSnap.docs.map(d => ({ id: d.id, ...d.data() })));
+        const appsData = getScamApps();
+        const linksData = getSpamLinks();
+        setApps(appsData);
+        setLinks(linksData);
       } catch (e) {
         console.warn('DB load failed:', e);
       } finally {
